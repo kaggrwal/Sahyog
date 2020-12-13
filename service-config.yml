@@ -1,0 +1,15 @@
+AMQP_URI: 'amqp://localhost:5672'
+rpc_exchange: 'nameko-rpc'
+max_workers: 10
+parent_calls_tracked: 10
+MONGODB_CONNECTION_URL: "mongodb://localhost:27017"
+MONGODB_DB_NAME: "Sahyog"
+
+LOGGING:
+    version: 1
+    handlers:
+        console:
+            class: logging.StreamHandler
+    root:
+        level: DEBUG
+        handlers: [console]
